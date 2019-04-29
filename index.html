@@ -114,7 +114,7 @@ Element je dio bloka, npr <strong> menu__item </strong>- oznaka su dva underscor
     
       <!-- https://stackoverflow.com/questions/48570109/layout-a-flex-box-similar-to-a-table -->
        <header>
-            <div class="col"><span class="tablica__naslov--crveno">{Ime Korisnika}</span></div>
+            <div class="col"><span class="tablica__naslov--crveno">{Ime Korisnika} {{korisnik}}</span></div>
             <div class="col"><span class="tablica__naslov--plavo">{1500} bodova</span></div>
             <!-- <div class="col">Column C</div> -->
           </header>
@@ -126,7 +126,7 @@ Element je dio bloka, npr <strong> menu__item </strong>- oznaka su dva underscor
          
   
 
-           <div v-for="player in players"  class="row">
+           <div v-for="player in players"  v-on:click="testiraj" class="row">
              <div class="col tablica__gradijent"></div>
              <div  class="col tablica__id"> {{ player.id }} </div>
              <div class="col tablica__slicica"> <img src="https://via.placeholder.com/50"></div>
