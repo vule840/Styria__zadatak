@@ -1,0 +1,104 @@
+{
+  "players": [
+    {
+      "id": 250,
+      "name": "Iva Horvat",
+      "score": 2500
+    },
+    {
+      "id": 230,
+      "name": "Mladen Mikulić",
+      "score": 2300
+    },
+    {
+      "id": 210,
+      "name": "Mirko Mandić",
+      "score": 2100
+    },
+    {
+      "id": 200,
+      "name": "Marija Horvat",
+      "score": 2000
+    },
+    {
+      "id": 150,
+      "name": "Petar Petrić",
+      "score": 1500
+    },
+    {
+      "id": 125,
+      "name": "Ana Prezić",
+      "score": 1250
+    },
+    {
+      "id": 110,
+      "name": "Joško Markač",
+      "score": 1100
+    },
+    {
+      "id": 100,
+      "name": "Evica Matejić",
+      "score": 1000
+    },
+    {
+      "id": 25,
+      "name": "Iva Horvat",
+      "score": 250
+    },
+    {
+      "id": 23,
+      "name": "Mladen Mikulić",
+      "score": 230
+    },
+    {
+      "id": 21,
+      "name": "Mirko Mandić",
+      "score": 210
+    },
+    {
+      "id": 20,
+      "name": "Marija Horvat",
+      "score": 200
+    },
+    {
+      "id": 15,
+      "name": "Petar Petrić",
+      "score": 150
+    },
+    {
+      "id": 12,
+      "name": "Ana Prezić",
+      "score": 125
+    },
+    {
+      "id": 11,
+      "name": "Joško Markač",
+      "score": 110
+    },
+    {
+      "id": 10,
+      "name": "Evica Matejić",
+      "score": 100
+    },
+    {
+      "id": 9,
+      "name": "Ana Prezić",
+      "score": 90
+    },
+    {
+      "id": 8,
+      "name": "Joško Markač",
+      "score": 85
+    },
+    {
+      "id": 4,
+      "name": "Evica Matejić",
+      "score": 80
+    },
+    {
+      "id": 1,
+      "name": "Ivana Matić",
+      "score": 75
+    }
+  ]
+}

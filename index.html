@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+<!-- Vue.js -->
+<!-- Load Babel -->
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js" type="text/javascript"></script> -->
+<!-- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+<!-- <script>
+      import json from './json/players.json'
+      export default{
+          data(){
+              return{
+                  myJson: json
+              }
+          }
+      }
+      console.log(data)
+</script> -->
+   
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+<!--   <p>Hello world! This is HTML5 Boilerplate.</p> -->
+
+
+<!-- Navigacija -->
+  <div class="nav">
+    <div class="contanier">
+      <div class="flex-row">
+        <h2 class="source_pro_black">Styria medijski servisi</h2>
+
+        <p>(SourceSans Pro googlefont)</p>
+      </div>
+       
+    </div>
+     
+    </div>
+
+
+<!-- Wrapper -->
+<div class="contanier bijeli_bg">
+
+
+<div class="flex-body">
+
+
+  <!-- SLIKA/NASLOV + TEXT -->
+  <div class="flex-column">
+    <div class="slika">
+
+
+      <!-- slika-reponziva na 480px -->
+      <picture>
+          <source media="(min-width: 480px)"
+            srcset="/img/slika.jpg 1x, /img/slika_hd.jpg 2x">
+          <source 
+            srcset="/img/slika.jpg 1x, /img/slika_hd.jpg 2x">
+          <img src="/img/slika.jpg" alt="">
+        </picture>
+        
+        <div class="slika__naslov">BEM Metodologija</div>
+      
+
+    </div>
+    <div class="BEM__metodologija">
+      
+         <h2 class="source_pro_black">BEM je kratica za Block, Element, Modifier</h2>
+         <p>BEM omogućava prilično strog način organizacije CSS klasa u neovisne module. To je objektan način pisanja CSS klasa i izgleda otprilike ovako:</p>
+   
+          <div class="BEM__metodologija--courier">
+            <p>.block {}</p>
+            <p>.block__element {}</p>
+            <p>.block--modifier {}</p>
+            <p>.block__element--modifier {}</p>
+          </div>
+          <p>Blok predstavlja objekt na web stranicama, npr menu <br>
+
+Element je dio bloka, npr <strong> menu__item </strong>- oznaka su dva underscora</p>
+
+        <p>Modifier je varijacija elementa ili bloka, npr <strong>menu__item--news</strong>  (ukoliko postoji razlika u recimo boji rubrika - <strong>news</strong>  (crveno),  <strong>show</strong> (narančasto),  <strong>sport</strong> (zeleno)) - oznaka su dva minusa --</p>
+
+        <p><strong>Za pomoć oko BEM Metodologije pogledati </strong><br>
+          <a href="http://tinyurl.com/k3gsu9s">http://tinyurl.com/k3gsu9s</a></p>
+    </div>
+  </div>
+
+
+    <!-- TABLICA DESNI DIO -->
+    <div class="flex-row tablica">
+    <div>
+         <div id="vue-app">
+
+    
+      <!-- https://stackoverflow.com/questions/48570109/layout-a-flex-box-similar-to-a-table -->
+       <header>
+            <div class="col"><span class="tablica__naslov--crveno">{Ime Korisnika}</span></div>
+            <div class="col"><span class="tablica__naslov--plavo">{1500} bodova</span></div>
+            <!-- <div class="col">Column C</div> -->
+          </header>
+          <header class="tablica__font__bijela">
+            <div class="col"><span>Korisnik</span></div>
+             <div class="col"><span>Bodovi</span></div>
+          </header>
+      <section>
+         
+  
+
+           <div v-for="player in players"  class="row">
+             <div class="col tablica__gradijent"></div>
+             <div  class="col tablica__id"> {{ player.id }} </div>
+             <div class="col tablica__slicica"> <img src="https://via.placeholder.com/50"></div>
+             <div class="col tablica__name">{{ player.name }} </div>
+             <div class="col tablica__score">{{ player.score }} </div>
+          </div>
+          
+          <div class="row tablica__row__center">
+            <div class="tablica__kuglica"></div>
+            <div class="tablica__kuglica"></div>
+            <div class="tablica__kuglica"></div>
+          </div>
+          <div class="row tablica__zadnja">
+            <div class="col tablica__gradijent"></div>
+            <div class="col tablica__id"> {{lasts.id}}</div>
+            <div class="col tablica__slicica"> <img src="https://via.placeholder.com/50"></div>
+            <div class="col tablica__name"> {{lasts.name}}</div>
+            <div class="col tablica__score"> {{lasts.score}}</div>
+          </div>
+        </section>
+
+  
+        </div>
+
+    </div>
+  </div>
+    
+</div>
+
+
+<!-- SKRIPTE -->
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+  <!--  <script src="js/routes.js"></script> -->
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

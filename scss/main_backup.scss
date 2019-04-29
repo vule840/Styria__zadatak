@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&subset=latin-ext');
+
+//BOJE
+
+$siva: #f0f0f0;
+$bijela:#ffffff;
+$crvena: #d4040a;
+$plava: #0068a9;
+
+
+//FONTOVI
+$arial: Arial, Helvetica, sans-serif;
+$source_pro: 'Source Sans Pro', sans-serif;
+$courier: "Courier New", Courier, monospace;  
+
+body{
+	background: $siva;
+	font-family: $arial;
+}
+
+///https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01
+.contanier{
+	max-width: 1000px;
+	width: 100%;
+	margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+}
+
+.bijeli_bg{
+	background: $bijela;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+ .column {
+   display: flex;
+   flex-direction: row;
+   flex-basis: 100%;
+   flex: 1;
+ }
+
+
+ .column2 {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 100%;
+   flex: 1;
+ }
+
+
+//Navigacija
+.nav{
+	background: $plava;
+	color: $bijela;
+	display: flex;
+	flex-direction: row;
+}
+
+//Slika & naslov
+.slika{
+	background: url('/img/slika.jpg');
+	 height: 328px;
+	.slika__naslov{
+		background: $crvena;
+		 align-items: flex-end;
+		 font-family: $source_pro;
+		 font-weight: bold;
+	}
+}
+
+.source_pro_black{
+	font-family: $source_pro;
+	font-weight: 900;
+}
+.courier p{
+	font-family: $courier;
+	color: $plava;
+	font-weight: 500;
+}
+//Tablica
+.tablica{}
+//Text
+.text{}
+
+
+
+// .box {
+//   display: flex;
+//   align-items: stretch;
+//   width: 100vw;
+//   background: blue;
+// }
+// .a {
+//   flex: 0 0 150px;
+//   background: pink;
+// }
+// .b-c {
+//   flex-direction: column;
+//   display: flex;
+//   flex-grow: 1;
+//   background: orange;
+// }
+
+
+
+///https://stackoverflow.com/questions/43056180/flexbox-3-divs-two-columns-one-with-two-rows
+//https://www.google.com/search?q=double+rows+in+flex&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjvvYnJ3OnhAhXqwsQBHVgpCRQQ_AUIDigB&biw=1070&bih=706#imgrc=ERrz5jTIRzSQAM:
+
+.flex-row {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+
+.flex-column {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.flex-body {
+    display: flex;
+}
+
+.flex-body div:not([class*="flex"]) {
+    border: 1px solid white;
+    flex: 1 1 200px;
+    width: 100%;
+}
